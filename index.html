@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP05 - Formularios</title>
+</head>
+
+<body>
+    <h1>
+        TP05 Formularios
+    </h1>
+
+    <h2>
+        Catalina Petasny
+    </h2>
+
+    <h3>
+        1. ¿Qué atributo se utiliza para especificar la URL a la que se enviarán los datos del formulario? <br><br>
+        A) method <br>
+        B) <u>action</u> <br>
+        C) target <br>
+        D) url <br>
+    </h3>
+
+    <h3>
+        2. ¿Cuál es el atributo que se utiliza para especificar el tipo de datos que se espera en un campo de entrada?
+        <br><br>
+        A) data-type <br>
+        B) input-type <br>
+        C) <u>type <br></u>
+        D) data <br>
+    </h3>
+
+    <h3>
+        3. ¿Cuál de los siguientes tipos de campo de entrada se utiliza para ingresar direcciones de correo electrónico?
+        <br><br>
+        A) text <br>
+        B) <u> email </u><br>
+        C) mail <br>
+        D) input <br>
+    </h3>
+
+    <h3>
+        4. ¿Cuál es el elemento HTML que se utiliza para asociar un texto descriptivo con un campo de entrada en un
+        formulario? <br><br>
+        A) &lt;description&gt; <br>
+        B) &lt;info&gt; <br>
+        C) &lt;placeholder&gt; <br>
+        D) <u>&lt;label&gt; &lt;/label&gt;</u> <br>
+    </h3>
+
+    <h3>
+        5.¿Cuál de las siguientes opciones es la etiqueta correcta para crear un botón de envío en un formulario?
+        <br><br>
+        A) <u> &lt;input type="submit"&gt;</u> <br>
+        B) &lt;button type="submit"&gt; <br>
+        C) &lt;btn&gt; <br>
+        D) &lt;submit&gt; &lt;/submit&gt;
+    </h3>
+
+    <h3>
+        6. ¿Cuál de los siguientes atributos se utiliza para hacer que un campo de entrada sea obligatorio en un
+        formulario? <br><br>
+        A) <u>required </u><br>
+        B) mandatory <br>
+        C) validate <br>
+        D) mandatoryfield <br>
+    </h3>
+
+    <h3>
+        7. ¿Cuál de los siguientes elementos HTML se utiliza para crear una lista desplegable en un formulario? <br><br>
+        A) &lt;list &gt; <br>
+        B) &lt;dropdown&gt; <br>
+        C) &lt;select&gt; <br>
+        D) <u>&lt;input type="list"&gt;</u> <br>
+    </h3>
+
+    <h3>
+        8. ¿Cuál de los siguientes tipos de campo de entrada se utiliza para ingresar un apellido? <br><br>
+        A) <u>text</u> <br>
+        B) email <br>
+        C) mail <br>
+        D) input <br>
+    </h3>
+
+    <h3>
+        9. ¿Qué atributo se utiliza para definir un valor predeterminado en un campo de entrada de un formulario?
+        <br><br>
+        A) <u>value</u> <br>
+        B) default <br>
+        C) preset <br>
+        D) initial <br>
+    </h3>
+
+    <h3>
+        10. ¿Qué son los métodos / verbos de petición HTTP? Dar ejemplos.
+    </h3>
+
+    <p>
+        R: Los métodos de petición HTTP son verbos que indican la acción que se desea realizar para un recurso
+        determinado <br>
+        <b><i>Ejemplos:</i></b> <br>
+        · GET: Solicita una representación de un recurso específico. Las peticiones que usan este método GET sólo deben
+        recuperar datos <br><br>
+
+        · POST: El método POST se utiliza para enviar una entidad a un recurso en específico, causando a menudo un <br>
+        cambio en el estado o efectos secundarios en el servidor <br><br>
+
+        · HEAD: Este método pide una respuesta similar a la de una petición GET, pero sin el cuerpo de la respuesta.
+        <br><br>
+
+        · PUT: El modo PUT reemplaza todas las representaciones actuales del recurso de destino con la carga útil de la
+        petición. <br><br>
+
+        · DELETE: Este método borra un recurso en específico. <br><br>
+    </p>
+
+    <h3>
+        11. ¿Qué son los códigos de estado de respuestas HTTP? Realizar una tabla con su clasificación.
+    </h3>
+
+    <p>
+        R: Los códigos de estado de respuestas HTTP indican si se ha completado satisfactoriamente una solicitud HTTP
+        específica <br><br>
+    </p>
+
+    <h3>
+        2- Aplicar formularios.
+
+        Crear una página. La página tiene que ser sobre el registro de clientes para <br>
+        una empresa. Elegir una de las siguientes temáticas: autos, videojuegos, cosmética, indumentaria. <br>
+
+        El formulario debe solicitar los siguientes datos: nombre y apellido* , correo electrónico*, fecha de <br>
+        nacimiento, DNI*, teléfono, usuario de X, usuario de Instagram, ciudad, provincia. El formulario tendrá, además, <br>
+        que consultar al usuario sobre sus preferencias relacionadas con la temática elegida, por ejemplo: <br>
+        ¿qué deportes realiza? tenis - natación - basquet <br>
+    </h3>
+
+    <p>R:</p>
+
+    <h2>
+        Registro a L'ORÉAL PARÍS
+    </h2>
+
+    <form action="/registro" method="post"></form>
+
+    <fieldset>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required> 
+    
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="nombre" required>
+    
+        <label for="Email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="nacimiento">Fecha de nacimiento:</label>
+        <input type="text" id="nacimiento" name="nacimiento">
+
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni" required>
+
+        <label for="provincia">Provincia:</label>
+        <select name="provincia" id="provincia">
+            <option value="">Seleccione una opcion</option>
+
+            <option value="Buenos Aires">Buenos Aires</option>
+            <option value="buenos aires">Ciudad Autónoma de Buenos Aires</option>
+            <option value="Misiones">Misiones</option>
+            <option value="Chaco">Chaco</option>
+            <option value="tierra del fuego">Tierra del Fuego</option>
+            <option value="cordoba">Cordoba</option>
+            <option value="la pampa">La Pampa</option>
+            <option value="santa cruz">Santa Cruz</option>
+            <option value="Entre ríos">Entre Ríos</option>
+            <option value="Santa fe">Santa Fe</option>
+            <option value="mendoza">Mendoza</option>
+            <option value="tucumán">Tucumán</option>
+            <option value="Salta">Salta</option>
+            <option value="Jujuy">Jujuy</option>
+            <option value="Corrientes">Corrientes</option>
+            <option value="Rio Negro">Rio Negro</option>
+            <option value="Neuquen">Neuquén</option>
+            <option value="Chubut">Chubut</option>
+            <option value="Formosa">Formosa</option>
+            <option value="santiagodelestero">Santiago del Estero</option>
+            <option value="San Luis">San Luis</option>
+            <option value="la rioja">La Rioja</option>
+
+
+        </select>
+
+
+
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" id="ciudad" name="ciudad"><br>
+
+        <br><label for="telefono">Teléfono:</label> 
+        <input type="text" name="telefono" id="telefono"> 
+
+        <label for="usuarioX">Usuario de X:</label>
+        <input type="text" id="usuarioX" name="usuarioX">
+
+        <label for="usuarioIG">Usuario de Instagram:</label>
+        <input type="text" id="usuarioIG" name="usuarioIG">
+
+        <label for="deporte">¿Qué deportes realiza?</label>
+        
+        <select name="deporte" id="deporte">
+        <option value="">Seleccione una opción</option>
+
+        <option value="tenis">Tenis</option>
+
+        <option value="natación">Natación:</option>
+
+        <option value="basquet">Basquet</option>
+
+        <option value="Voley">Voley</option>
+
+        <option value="futbol">Fútbol</option>
+
+        </select>
+
+        <input type="submit" value="Enviar">
+
+
+
+
+
+   
+
+
+
+</body>
+
+</html>
